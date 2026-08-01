@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Honey Bee Girls</title>
+<meta name="description" content="Shop raw wildflower honey, Honey Bee Girls merch, and beeswax goods (candles &amp; salves coming soon) straight from our Boulder, Colorado hives.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="checker-strip">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <svg class="bee-badge" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="46" fill="#F7C331" stroke="#2B1E14" stroke-width="4"/>
+        <ellipse cx="50" cy="58" rx="16" ry="20" fill="#F7C331" stroke="#2B1E14" stroke-width="3.5"/>
+        <path d="M36 50h28M35 60h30M38 70h24" stroke="#2B1E14" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="50" cy="34" r="9" fill="#2B1E14"/>
+        <path d="M34 40c-8-10-4-18 4-14M66 40c8-10 4-18-4-14" stroke="#2B1E14" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+      Honey Bee Girls
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <a href="shop.html" class="nav-cta cart-btn">Shop Now <span class="cart-count" style="display:none;">0</span></a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:20px;">
+    <div class="container center" style="max-width:700px;">
+      <span class="eyebrow" style="justify-content:center;">Straight from the hive</span>
+      <h1>Shop the hive.</h1>
+      <p class="hero-tagline" style="margin:0 auto;">Raw wildflower honey, cozy merch, and beeswax goods — all made in small batches from our six Boulder hives.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+
+      <div class="card-grid" style="margin-bottom:50px;">
+        <img src="img/frame-portrait-1.jpeg" alt="A beekeeper holding up a frame full of bees during a hive inspection." style="border-radius: var(--radius); border: var(--border); box-shadow: var(--shadow); aspect-ratio: 4/5; object-fit: cover;">
+        <img src="img/honeycomb-frame-closeup.jpeg" alt="A close-up of a golden honeycomb frame full of capped honey." style="border-radius: var(--radius); border: var(--border); box-shadow: var(--shadow); aspect-ratio: 4/5; object-fit: cover;">
+        <img src="img/market-stand.jpeg" alt="Brenna and Kaitlyn at their Honey Bee Girls market stand." style="border-radius: var(--radius); border: var(--border); box-shadow: var(--shadow); aspect-ratio: 4/5; object-fit: cover;">
+      </div>
+
+      <div class="product-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="honey">Honey</button>
+        <button data-filter="merch">Merch</button>
+        <button data-filter="wax">Beeswax</button>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Honey -->
+        <div class="product-card" data-cat="honey">
+          <div class="product-media"><img src="img/jars-lineup-pouring.jpeg" alt="Rows of Honey Bee Girls raw wildflower honey jars lined up on a market table."></div>
+          <div class="product-body">
+            <h3>Raw Wildflower Honey — 12oz</h3>
+            <p class="product-desc">Our signature jar. Raw, unfiltered, and bottled by hand from Boulder County wildflowers.</p>
+            <div class="product-foot"><span class="price">$18</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="honey">
+          <div class="product-media"><img src="img/jar-in-hand-sky.jpeg" alt="A Honey Bee Girls raw wildflower honey jar held up against a blue Colorado sky."></div>
+          <div class="product-body">
+            <h3>Raw Wildflower Honey — 3lb</h3>
+            <p class="product-desc">Our big jar for honey lovers, gifting, or restocking the pantry.</p>
+            <div class="product-foot"><span class="price">$60</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="honey">
+          <div class="product-media"><img src="img/market-stand.jpeg" alt="Brenna and Kaitlyn at their Honey Bee Girls market stand with jars of honey for sale."></div>
+          <div class="product-body">
+            <h3>Farmers Market Sampler</h3>
+            <p class="product-desc">Can't make it to the market? We'll bring a taste of the stand to your door.</p>
+            <div class="product-foot"><span class="price">$22</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <!-- Merch -->
+        <div class="product-card" data-cat="merch">
+          <div class="product-media" style="background:var(--pink);"><svg width="38%" viewBox="0 0 64 64" fill="none"><path d="M12 44l10-28h20l10 28-20 12z" fill="#FBF1D9" stroke="#2B1E14" stroke-width="3"/></svg></div>
+          <div class="product-body">
+            <h3>Honey Bee Girls Tee</h3>
+            <p class="product-desc">Soft cotton crewneck with our jar art screen-printed on the front.</p>
+            <div class="product-foot"><span class="price">$26</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="merch">
+          <div class="product-media" style="background:var(--blue);"><svg width="40%" viewBox="0 0 64 64" fill="none"><rect x="10" y="16" width="44" height="32" rx="4" fill="#FBF1D9" stroke="#2B1E14" stroke-width="3"/><circle cx="32" cy="32" r="8" fill="#F7C331" stroke="#2B1E14" stroke-width="3"/></svg></div>
+          <div class="product-body">
+            <h3>Sticker Pack</h3>
+            <p class="product-desc">Four vinyl stickers featuring our sun, bee, and daisy jar illustrations.</p>
+            <div class="product-foot"><span class="price">$8</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="merch">
+          <div class="product-media" style="background:var(--green);"><svg width="42%" viewBox="0 0 64 64" fill="none"><path d="M14 54V22a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v32" stroke="#FBF1D9" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M14 54h36" stroke="#FBF1D9" stroke-width="4" stroke-linecap="round"/></svg></div>
+          <div class="product-body">
+            <h3>Canvas Tote</h3>
+            <p class="product-desc">Sturdy market tote for hauling your honey jars (and everything else) home.</p>
+            <div class="product-foot"><span class="price">$18</span><button class="add-btn">Add</button></div>
+          </div>
+        </div>
+
+        <!-- Beeswax — coming soon -->
+        <div class="product-card" data-cat="wax">
+          <div class="product-media" style="background:var(--cream-2);">
+            <span class="product-tag soon">Coming Soon</span>
+            <svg width="34%" viewBox="0 0 64 64" fill="none"><rect x="24" y="10" width="16" height="44" rx="3" fill="#FBF1D9" stroke="#2B1E14" stroke-width="3"/><path d="M32 10c2-6 4-6 4 0" stroke="#F0972B" stroke-width="3" fill="none"/></svg>
+          </div>
+          <div class="product-body">
+            <h3>Beeswax Candle</h3>
+            <p class="product-desc">Hand-poured 100% beeswax candle from our own hives. Naturally clean-burning.</p>
+            <div class="product-foot"><span class="price">TBA</span><button class="add-btn" disabled>Notify Me</button></div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="wax">
+          <div class="product-media" style="background:var(--cream-2);">
+            <span class="product-tag soon">Coming Soon</span>
+            <svg width="34%" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="18" fill="#FBF1D9" stroke="#2B1E14" stroke-width="3"/><ellipse cx="32" cy="26" rx="10" ry="4" fill="#F1A6CE" stroke="#2B1E14" stroke-width="2"/></svg>
+          </div>
+          <div class="product-body">
+            <h3>Beeswax &amp; Honey Salve</h3>
+            <p class="product-desc">A soothing balm made with beeswax, honey, and propolis from our hives.</p>
+            <div class="product-foot"><span class="price">TBA</span><button class="add-btn" disabled>Notify Me</button></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="center" style="margin-top:44px;">
+        <p class="hero-tagline" style="margin:0 auto 16px;">Want to be the first to know when candles &amp; salves drop?</p>
+      </div>
+
+      <div class="form-panel" style="max-width:520px; margin:0 auto;">
+        <h3 class="center" style="margin-bottom:6px;">Get notified 🕯️</h3>
+        <p class="center" style="font-size:.9rem; opacity:.8;">We'll email you the moment beeswax goods go live.</p>
+        <form data-demo-form>
+          <div class="form-row">
+            <label for="notify-email">Email</label>
+            <input id="notify-email" type="email" placeholder="you@email.com" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Notify Me</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg class="bee-badge" width="34" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="46" fill="#F7C331" stroke="#2B1E14" stroke-width="4"/>
+            <ellipse cx="50" cy="58" rx="16" ry="20" fill="#F7C331" stroke="#2B1E14" stroke-width="3.5"/>
+            <path d="M36 50h28M35 60h30M38 70h24" stroke="#2B1E14" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          Honey Bee Girls
+        </div>
+        <p style="max-width:32ch;">Small-batch raw honey and pollinator advocacy from two best friends in Boulder, Colorado.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Say Hi</h4>
+        <ul>
+          <li><a href="mailto:honeybeegirls.co@gmail.com">honeybeegirls.co@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/honeybeegirls.co/" target="_blank" rel="noopener">@honeybeegirls.co</a></li>
+          <li>730 Main St.<br>Boulder, CO 80302</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form data-demo-form>
+          <div class="form-row">
+            <input type="email" placeholder="you@email.com" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-small" style="width:100%; justify-content:center;">Join the Hive</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Honey Bee Girls. Made with love (and bees) in Boulder, CO.</span>
+      <span>Site design inspired by our jar label 🍯</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
